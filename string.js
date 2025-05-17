@@ -1,5 +1,5 @@
 // datatype-->
-// 1-->string:
+// 1-->string:--> primitive data type.
 // inbuilt method used in strings:
 
 //(a)-->length()--->return the length of string
@@ -37,9 +37,14 @@ Trim()
 
 //(e)-->replace()-->replace part of a string with another string
 function Replace(){
-  let name="vaishali gupta"
-  let result = name.replace("gupta","baniya")
-  console.log(result)
+  let name="vaishali gupta and khushi gupta"
+  let text="This is string and String of js"
+  let result = name.replace("gupta","baniya") // replace only 1st string
+  let result1=name.replace(/gupta/g,"baniya") // it means global and change all the string of gupta
+  let result2=text.replace(/string/gi,"Cybrom") // it means case insensitive 
+  console.log(result) // vaishali baniya and khushi gupta
+  console.log(result1) // vaishali baniya and khushi baniya
+  console.log(result2) // This is Cybrom and Cybrom of js
 }
 Replace()
 
@@ -107,6 +112,9 @@ function Split(){
     let name = "vaishali Gupta"
     let result = name.split(" ")
     console.log(result) 
+    
+    let okk = "w-e are f-rom c-ybr-om"
+    console.log(okk.split("-")) // acc to separator
 }
 Split()
 
